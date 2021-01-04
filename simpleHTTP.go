@@ -19,7 +19,8 @@ func main() {
 func handler(w http.ResponseWriter, r *http.Request) {
 
 	fmt.Fprintf(w, "\n===> local IP(Frontend): %q\n\n",GetOutboundIP())
-	fmt.Fprintf(w, "Begin to fetch Backend data.")
+	fmt.Fprintf(w, "\n===> Begin to fetch Backend data.")
+	fmt.Fprintf(w, "\n-------------------------------------")
 	MakeRequest(w)
 }
 
