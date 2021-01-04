@@ -24,7 +24,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func MakeRequest(w http.ResponseWriter) {
-	resp, err := http.Get("wise-proto-nlb-df9fa7d3abe4fef3.elb.us-west-2.amazonaws.com")
+	resp, err := http.Get("http://wise-proto-nlb-df9fa7d3abe4fef3.elb.us-west-2.amazonaws.com")
 	if err != nil {
 		log.Fatalln(err)
 	}
