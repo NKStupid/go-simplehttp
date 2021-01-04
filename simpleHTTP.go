@@ -18,7 +18,7 @@ func main() {
 // printing request headers/params
 func handler(w http.ResponseWriter, r *http.Request) {
 
-	fmt.Fprintf(w, "\n===> local IP: %q\n\n",GetOutboundIP())
+	fmt.Fprintf(w, "\n===> local IP(Frontend): %q\n\n",GetOutboundIP())
 	fmt.Fprintf(w, "Begin to fetch Backend data.")
 	MakeRequest(w)
 }
