@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net"
-	"os"
+// 	"os"
  	"net/http"
 	"io/ioutil"
 )
@@ -35,7 +35,8 @@ func MakeRequest(w http.ResponseWriter) {
 	if err != nil {
 		log.Fatalln(err)
 	}
-	fmt.Fprintf(w, body)
+	str2 := string(body)
+	fmt.Fprintf(w, str2)
 
 }
 
