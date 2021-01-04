@@ -21,7 +21,7 @@ WORKDIR /dist
 # Copy binary from build to main folder
 RUN cp /build/simpleHTTP .
 
-EXPOSE 8000
+EXPOSE 8080
 
 # Build a small image
 FROM scratch
